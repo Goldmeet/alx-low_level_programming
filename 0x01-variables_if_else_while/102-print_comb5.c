@@ -15,12 +15,12 @@ int main(void)
 
           for (b = 0; b <= 9; b++)
             {
-               if (a = b)
+               if (a == b)
                  {
                    putchar('0' + a);
                    putchar('0' + b);
-		   putchar(' ')
-		   if (a < b || a > b)
+		   putchar(' ');
+      		   if (a < b || a > b)
 		    {
 			putchar('0' + a);
 			putchar('0' + b);
