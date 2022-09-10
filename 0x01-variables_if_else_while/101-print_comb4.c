@@ -11,19 +11,19 @@ int main(void)
 	int b = 48;
 	int c = 48;
 
-	while (a < 58)
+	for (; a < 58; a++)
 	{
 		
-		while (b < 58)
+		for (; b < 58; b++)
 		{
-			while(c < 58)
+			for (; b < 58; b++)
 			{
 			
 				if (c > b && b > a)
 				{
-					putchar(a);
-					putchar(b);
-					putchar(c);
+					putchar('0' + a);
+					putchar('0' + b);
+					putchar('0' + c);
 					if (a != 55 || b != 56 || c != 57)
 					{
 						putchar(',');
@@ -31,11 +31,11 @@ int main(void)
 					}
 				}
 			}
-				c++;
+				
 		}
-			b++;
+			
 	}
-		a++;
+		
 	
 		 			
 	putchar('\n');
