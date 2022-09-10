@@ -24,11 +24,11 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-			}
-		       
-		   
-			b++;
-		}
+			 }
+ 
+			
+			 b++;
+ 		 }
 		a++;
 	}
 		 			
