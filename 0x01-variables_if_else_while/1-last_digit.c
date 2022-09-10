@@ -9,26 +9,24 @@ File Edit Options Buffers Tools C Help
 int main(void)
 {
            int n;
-
+	   int last_d;
 
            srand(time(0));
            n = rand() - RAND_MAX / 2;
+	   last_d = n %  10;
 /* your code goes there */
-           if (n % 10 > 5)
+           if (last_d  > 5)
            {
 
-               printf("the last digit of %d is %d and is greate\
-r than 5\n", n, n);
+               printf("the last digit of %d is %d and is greater than 5\n", n, last_d);
            }
-           else if (n % 10 == 0)
+           else if (last_d  == 0)
            {
-               printf("the last digit of %d is %d and is 0 \n",\
- n, n);
+	      printf("the last digit of %d is %d and is 0 \n", n, last_d);
            }
-           else if (n % 10 < 6)
+           else if (last_d  < 6)
            {
-               printf("the last digit of %d is %d and is less t\
-han 6 not 0\n", n, n);
+               printf("the last digit of %d is %d and is less than 6 not 0\n", n, last_d);
            }
 
             return (0);
