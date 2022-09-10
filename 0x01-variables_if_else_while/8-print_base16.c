@@ -12,12 +12,12 @@ int main(void)
 	while (a <= 57)
 	{
 		putchar(a);
-		a++
+		a++;
 	}
 	while (b <= 'f')
 	{
-		putchar(b)
-		b++
+	          putchar(b);
+		  b++;
 	}
 	
 		 			
