@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 /**
@@ -9,33 +10,37 @@ int main(void)
 {
         int a;
         int b;
-
-        for (a = 0; a <= 9; a++)
+        int i, z, x,y;
+        for (a = 0; a <= 99; a++)
         {
+                i = a / 10;
+                x = a % 10;
+                
+                for (b = 0; b <= 99; b++)
+                {
+                        z = b / 10;
+                        y = b % 10;
+                        if (i < z || (i == z && a < b ))
+                        {
+                               putchar('0' + i);
+                               putchar('0' + x);
+                               putchar(' ');
+                  
+                               putchar('0' + z);
+                               putchar('0' + y);
 
-          for (b = 0; b <= 9; b++)
-            {
-               if (a == b)
-                 {
-                   putchar('0' + a);
-                   putchar('0' + b);
-		   putchar(' ');
-      		   if (a < b || a > b)
-		    {
-			putchar('0' + a);
-			putchar('0' + b);
-			
-		    }
-                   	if (a != 9 || b != 9)
-                      	{
-                        	putchar(',');
-                        	putchar(' ');
-                      	}
-                 }
-            }
+                    
+                              if (i != 9 || z != 8)
+                              {
+                                   putchar(',');
+                                   putchar(' ');
+                               }
+                            }
+                     }
 
-         }
+               }
 
         putchar('\n');
         return (0);
-}
+} 
+    
