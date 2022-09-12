@@ -28,6 +28,8 @@ int main(void)
                   
                                putchar('0' + z);
                                putchar('0' + y);
+			       if (a == 98)
+				 break;
 
                     
                               if (i != 9 || z != 8)
