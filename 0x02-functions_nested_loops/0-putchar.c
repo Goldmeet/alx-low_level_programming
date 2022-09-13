@@ -1,8 +1,6 @@
 /* the system header file */
 #include "main.h"
 
-/* function prototype of the program */
-int _putchar(char c);
 /**
  *main- The function will print a string
  *
@@ -10,8 +8,15 @@ int _putchar(char c);
  */
 int main(void)
 {
-    char i[] = "_putchar";
-        _putchar(i);
+        _putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
         return (0);
 
 
