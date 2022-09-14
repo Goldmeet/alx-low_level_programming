@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *_isalpha- check the form of the type
- *@parameterc: c is an int
+ *@parameterc: the parameter is int c
  *
  *Return: Always return 1 or 0
  */
