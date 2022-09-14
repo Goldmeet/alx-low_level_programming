@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *_islower- print character form
- *c - is an int
+ *@parameterc - is an int
  *Return: Always renturn 1 or 0
  */
 int _islower(int c)
