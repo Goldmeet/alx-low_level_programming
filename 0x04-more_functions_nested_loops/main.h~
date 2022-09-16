@@ -1,0 +1,2 @@
+/* the main function file */
+int _isupper(int c);
