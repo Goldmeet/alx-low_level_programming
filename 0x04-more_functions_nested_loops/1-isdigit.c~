@@ -1,0 +1,6 @@
+#include "main.h"
+/**
+ *isdigit- check digit numbers.
+ *@c: is an integer value of ascci
+ *Return: Always return a value
+ */
