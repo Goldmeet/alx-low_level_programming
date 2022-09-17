@@ -9,7 +9,7 @@ int main(void)
 {
 	int a = 1, b = 2;
 	printf("%d", a);
-	while (i < 101)
+	while (b < 101)
 	{
 		if (b % 3 == 0 && b % 5 == 0)
 			printf(" FizzBuzz");
@@ -18,8 +18,8 @@ int main(void)
 		else if (b % 5 == 0)
 			printf(" Buzz");
 		else
-			printf(" %d", i);
-		i++;
+			printf(" %d", b);
+		b++;
 	}
 	printf("\n");
 	return (0);
