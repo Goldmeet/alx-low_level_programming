@@ -18,9 +18,11 @@ void print_triangle(int size)
                             for(b = 0; b <= size; b++)
                                 _putchar('#');
                          }
-                         a = 0;
-                         for (;a < size-1; a++)
-                         {
+			 else
+			{
+			  a = 0;
+			  for (;a < size-1; a++)
+		          {
                                 _putchar(' ');
 
                           }
@@ -30,8 +32,9 @@ void print_triangle(int size)
                                _putchar('#');
 
                            }
-                           _putchar('\n');
-                           i++;
+			}
+			 _putchar('\n');
+			 i++;
                     }
 
         }
