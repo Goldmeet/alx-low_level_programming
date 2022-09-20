@@ -1,0 +1,6 @@
+# project Description
+0 -function that takes a pointer to an int as parameter and updates the value
+1 -function that swaps the values of two integers..
+2 -function that returns the length of a string
+3 -function that prints a string, followed by a new line,
+4 -function that prints a string, in reverse, 
