@@ -1,0 +1,4 @@
+#include "main.h"
+/**
+ *_strcat- concatinate two string.
+ *@dest: c 
