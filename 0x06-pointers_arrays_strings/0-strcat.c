@@ -5,7 +5,7 @@
  *@src: pointer of type character 
  *Return: Alway return a pointer.
  */
-char *_strcat2(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 	int i = 0, j = 0;
 	char *p;
