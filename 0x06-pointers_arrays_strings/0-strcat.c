@@ -5,19 +5,19 @@
  *@src: pointer of type character 
  *Return: Alway return a pointer.
  */
-char *_strcat(char *dest, char *src)
+char *_strcat2(char *dest, char *src)
 {
-                 int i;
-                 int len = 0;
-		 char *p;
-
-                 for(i = 0; *(dest + i) != '\0'; i++)
-                             len++;
-                 int dest_len  = len;
-                 for (i = 0; *(src + i) != '\0'; i++)
-                             dest[dest_len + i] = *(src + i);
-		 dest[dest_len + i] =  '\0';
-		 p = dest;
-
-                 return (p);
+	int i = 0, j = 0;
+	char *p;
+	while (*(dest + i) != '\0')
+		i++;
+	while (*(src + j) != '\0')
+	{
+		*(dest + i) = *(src + j);
+		i++;
+		j++;
+	}
+	*(dest + i) = '\0';
+	p = dest;
+	return (p);
 }
