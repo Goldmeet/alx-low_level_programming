@@ -13,7 +13,7 @@ char *string_toupper(char *c);
 char *cap_string(char *);
 char *leet(char *c);
 char *rot13(char *c);
-
+void print_number(int num);
 
 
 
