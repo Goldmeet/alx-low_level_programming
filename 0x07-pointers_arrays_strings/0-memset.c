@@ -1,16 +1,18 @@
 #include "main.h"
+
 /**
- *_menset- print the memory contant
- *@s: is a pointer
- *@b: is a constant character
- *@n: is an unsigned integer
- *Return: returns a pointer
+ * _memset - fills memory with a constant byte
+ *
+ * @s: pointer to string
+ * @b: constant byte
+ * @n: first bytes to change
+ * Return: pointer to modified string
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-    unsigned i;
-    for (i = 0; i < n; i++)
-        s[i] = b;
-    return (s);
+	unsigned int i;
 
+	for (i = 0; i < n; i++)
+		s[i] = b;
+	return (s);
 }
