@@ -1,28 +1,28 @@
-#include "main.h"
+#includ "main.h"
 #include <stdlib.h>
 
 /**
- * str_concat - concatenates two strings
+ * string_nconcat - concatenates two strings
  *
  * @s1: string 1
  * @s2: string 2
- *@n: unsigned integer
+ * @n: unsigned integer
  * Return: char pointer
  */
-char *str_concat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-  unsigned int i, j, len1, len2 = 0;
+	unsigned int i, j, len1, len2 = 0;
 	char *str;
 
 	if (s1 != NULL)
 		for (i = 0; s1[i] != '\0'; i++)
-		  len1++;
+			len1++;
 	if (s2 != NULL)
 		for (i = 0; s2[i] != '\0'; i++)
-		  len2++;
-	if (n >= len2)
-	  n = len2;
-	str = malloc(sizeof(char) * (len1 + n + 1));
+			len2++;
+    if (n >= len2)
+            n = len2;
+	str = malloc(sizeof(char*) * (len1 + n + 1));
 	if (str == NULL)
 		return (NULL);
 	if (s1 == NULL && s2 == NULL)
@@ -44,3 +44,6 @@ char *str_concat(char *s1, char *s2, unsigned int n)
 	str[i] = '\0';
 	return (str);
 }
+
+
+
