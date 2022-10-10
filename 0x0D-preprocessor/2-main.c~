@@ -1,0 +1,14 @@
+#include <stdio.h>
+/**
+ *main- print the file name
+ *@argc: counter
+ *@argv: vecter of arrays of strings
+ *Return: return an integer
+ */
+int main( argc, **argv[])
+{
+  argc(void);
+  printf("%s\n", *argv);
+  return (0);
+
+}
