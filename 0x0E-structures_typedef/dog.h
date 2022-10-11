@@ -18,4 +18,4 @@ char *owner;
 
 };
 
-#ebdif /* DOG_H */
+#endif   /*  DOG_H  */
