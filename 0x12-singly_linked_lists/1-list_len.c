@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- *print_list - singly link list.
+ *list_len - singly link list.
  * @h: a pointer to a struct.
  *
  * Description: singly linked list node structure
