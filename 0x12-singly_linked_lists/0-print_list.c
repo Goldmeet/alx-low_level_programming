@@ -1,6 +1,6 @@
 
 #include "lists.h"
-#include <stdlib>
+
 
 /**
  *print_list - singly link list.
