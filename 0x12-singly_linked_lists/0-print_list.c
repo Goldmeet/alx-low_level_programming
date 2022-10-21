@@ -1,7 +1,6 @@
 
 #include "lists.h"
 
-
 /**
  *print_list - singly link list.
  * @h: a pointer to a struct.
