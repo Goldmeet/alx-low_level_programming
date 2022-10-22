@@ -7,11 +7,9 @@
  * Return: address of the head.
  */
 
-
-
 list_t *add_node_end(list_t **head, const char *str)
 {
-        list_t *new_node;
+        list_t *new_nod, *end_node;
         size_t n;
 
         new_node = malloc(sizeof(list_t));
@@ -24,8 +22,24 @@ list_t *add_node_end(list_t **head, const char *str)
                 ;
 
         new_node->len = n;
-        *head->next = new_node;
-        *head->next->next = NULL;
+	new_node->next = *head;
+        *head = new_node;
+
+	end_node = malloc(sizeof(list_t));
+	if (end_node == NULL)
+		return (NULL);
+	end_node->str = strdup(str);
+
+	for (n = 0; str[n]; n++)
+		;
+	end_node->len = n;
+
+	while (*head != NULL)
+	{
+		*head = *head->next;
+	}
+	*head = end_node;
+
 
         return (*head);
 }
