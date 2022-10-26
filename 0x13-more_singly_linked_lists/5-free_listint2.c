@@ -1,12 +1,12 @@
 #include "lists.h"
 /**
- * free_listint - singly linked list
+ * free_listint2 - singly linked list
  * @head: pointer to struct
  *
  * Description: singly linked list node structure
  *Return: return unsigned value
  */
-void free_listint(listint_t *head)
+void free_listint2(listint_t *head)
 {
         listint_t *temp = head;
         while (temp != NULL)
