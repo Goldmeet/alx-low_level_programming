@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <conio.h>
-#include <string.h>
+
 
 int _putchar(int c);
 unsigned int binary_to_uint(const char *b);
